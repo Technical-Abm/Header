@@ -56,7 +56,7 @@ class dev(object):
             os.system("cls")
             print(DEVICE)
             print()
-            print(colors().colorma["white"],"\t Enter any domains name to get website api headers ",colors().colorma["none"])
+            print(colors().colorma["white"]," Enter any domains name to get website api headers ",colors().colorma["none"])
             time.sleep(1)
             self.domains = input(" Enter domains name :- ")
             self.result = requests.get("https://api.hackertarget.com/httpheaders/?q="+self.domains).text
